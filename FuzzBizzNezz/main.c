@@ -13,24 +13,24 @@
 #include <stdio.h>
 
 //create function
-void fuzzBizzNezz(int f, int b, int n) {
+void fuzzBizzNezz(int fuzz, int bizz, int nezz) {
     int i;
-    for(i=1; i <=n; i++){
+    for(i=1; i <=nezz; i++){
         
-        if(i == n) {
+        if(i == nezz) {
             printf("Nezz\n");
         }
         
-        else if(i%f == 0 && i%b == 0) {
+        else if(i%fuzz == 0 && i%bizz == 0) {
         printf("FuzzBizz\n");
         }
         
-        else if(i%f == 0) {
+        else if(i%fuzz == 0) {
             
         printf("Fuzz\n");
         }
         
-        else if(i%b == 0) {
+        else if(i%bizz == 0) {
             
         printf("Bizz\n");
         }
